@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin: 20px;
+    color: lightcoral;
+    text-decoration: none;
+}
+
+h1 {
+    color: lightcoral;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+select {
+    color: white;
+    background-color: #bdbdbd;
+    border: 2px solid #bdbdbd;
+    font-size: 15px;
+    border-radius: 2px;
+    margin: 7px;
+}
+
+li {
+    list-style: none;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+li a:hover{
+    color: lightcoral;
+}
+
+.question, .category, .weight, .example {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: dimgray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+#results, #categories, #weights, #examples {
+    margin-top: 20px;
+}
+
+table{
+    justify-content: center;
+}
+
+.text-font{
+    background-color: #333;
+    padding-right: 850px;
+}
+
+.text-font h2{
+    color: lightcoral;
+    padding: 9px;
+    font-size: 24px;
+}
+.text-font ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.text-font ul li {
+    margin: 0;
+}
+.text-font ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.text-font ul li a:hover {
+    background-color: #575757;
+}

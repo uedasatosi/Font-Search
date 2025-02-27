@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォント推薦アプリ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="#questions">フォント推薦</a></li>
+            <li><a href="#text-font">カテゴリー検索</a></li>
+            <!-- <li><a href="weights.html">文字の太さ別</a></li>
+            <li><a href="examples.html">使用事例</a></li> -->
+        </ul>
+    </nav>
+    <div class="container" id="home">
+        <h1>ようこそ！フォント推薦アプリへ</h1>
+       
+        <div id="questions">
+            <h2>フォント推薦</h2>
+            <table>
+        <th>
+         <select name="midashi" id="midashi">
+            <option name="midashis" value="1">見出し</option>
+            <option name="midashis" value="2">本文</option>
+         </select>
+        </th>
+
+        <th>
+         <select name="font" id="font">
+            <option name="fonts" value="3">明朝</option>
+            <option name="fonts" value="4">ゴシック</option>
+            <option name="fonts" value="5">丸ゴシック</option>
+            <option name="fonts" value="6">筆</option>
+            <option name="fonts" value="7">デザイン</option>
+            <option name="fonts" value="8">手書き</option>
+            <option name="fonts" value="9">その他</option>
+         </select>
+        </th>
+
+        <th>
+            <select name="hutosa" id="hutosa">
+                <option name="hutosas" value="10">かわちい</option>
+                <!-- <option name="hutosas" value="11">かっこいい</option> -->
+                <option name="hutosas" value="12">フォーマル</option>
+                <option name="hutosas" value="13">その他</option>
+             </select>
+        </th>
+        </table>
+        </div>
+        <button id="recommendButton">フォントを推薦する</button>
+        <p>回答一覧</p> 
+        <div id="results">
+           
+            <!-- 推薦されたフォントがここに表示されます -->
+        <div id="results">
+            <!-- 推薦されたフォントがここに表示されます -->
+        </div>
+        <div id="fontList">
+            <!-- カテゴリー別のフォント一覧がここに表示されます -->
+        </div>
+    </div>
+    <div class="categories">
+        <table id="font-table"></table>
+    </div>
+</div>
+
+    <div class="text-font" id="text-font">
+
+         <input type="text" id="search-input" placeholder="キーワードを入力">
+         <button id="sbtn">検索</button>
+        <!--<div id="search-results"></div>
+        <div class="search-target">
+          <h3>タイトル1</h3>
+          <p>説明1</p>
+        </div>
+        <div class="search-target">
+          <h3>タイトル2</h3>
+          <p>説明2</p>
+        </div> -->
+
+        <h1>フォント一覧</h1>
+            <!-- 見出しー明朝 -->
+        <ul class = midashi_mintyou id  = "midashi_mintyou">
+            <h2 id="midashiminntyou">見出しー明朝</h2>
+            <li id = "mintyou_Hina Mincho"><a href = "https://fonts.google.com/specimen/Hina+Mincho">Hina Mincho</a></li>
+        
+            <li id = "mintyou_Kaisei Opti"><a href = "https://fonts.google.com/specimen/Kaisei+Opti">Kaisei Opti</a></li>
+        
+            <li id = "mintyou_Kaisei Decol"><a href = "https://fonts.google.com/specimen/Kaisei+Decol">Kaisei Decol</a></li>
+        
+            <li id = "mintyou_han serif"><a href = "https://github.com/adobe-fonts/source-han-serif">han serif</a></li>
+        
+            <li id = "mintyou_tikuhou"><a href = "https://typographish.booth.pm/items/4404547">築豊明朝</a></li>
+        
+            <li id = "mintyou_mabataki"><a href = "https://flopdesign.booth.pm/items/3793828">瞬きノ明朝（フリーフォント）</a></li>
+        
+            <li id = "mintyou_emo"><a href = "https://flopdesign.booth.pm/items/1157087">廻募（エモ）</a></li>
+        
+            <li id = "mintyou_tomoe"><a href = "https://www.flopdesign.com/himemincho-font/tomoegozen.html">姫明朝ともえごぜん</a></li>
+        
+            <li id = "mintyou_sirayuki"><a href = "https://www.flopdesign.com/himemincho-font/shirayuki.html">姫明朝しらゆき</a></li>
+        
+            <li id = "mintyou_utsukushi"><a href = "https://www.flopdesign.com/freefont/utsukushi-mincho-font.html">うつくし明朝体</a></li>
+        
+            <li id = "mintyou_apuri"><a href = "https://flopdesign.com/blog/font/5852/">アプリ明朝</a></li>
+            </ul> 
+                <!-- 見出しーゴシック -->
+                 
+            <!-- <ul class = midashi_gothic id  = "midashi_gothic">
+                <h2 id="midashigothic">見出しーゴシック</h2>
+            <li id = "sippori_huto_gothic"><a href = "https://fontdasu.booth.pm/items/5147560">しっぽり太ゴシック</a></li>
+            
+            <li id = "sippori_huto_gotiic"><a href = "https://fontdasu.booth.pm/items/5147583">しっぽり太ゴチック</a></li>
+            
+            <li id = "otesei_Rwi_gothic"><a href = "https://rwi.booth.pm/items/4114624">お手製Rwiフォント</a></li>
+            
+            <li id = "tunagi_gothic"><a href = "https://mokuzai.booth.pm/items/3885939">つなぎゴシック</a></li>
+            
+            <li id = "tro_no_glitch_gothic"><a href = "https://microraptor.booth.pm/items/3041172">瀞ノグリッチ黒体・瀞ノグリッチ明朝 </a></li>
+            
+            <li id = "zakkuri_gothic"><a href = "https://nippori30.booth.pm/items/2526375">ざっくりゴシック </a></li>
+            
+            <li id = "line_gothic"><a href = "https://nippori30.booth.pm/items/2120156">ラインゴシック </a></li>
+            
+            <li id = "slit_gothic"><a href = "https://nippori30.booth.pm/items/1812446">スリットゴシック</a></li>
+            
+            <li id = "dokidoki_fantasia"><a href = "https://flopdesign.booth.pm/items/4106184">どきどきファンタジア </a></li>
+            
+            <li id = "zero_gothic"><a href = "https://flopdesign.booth.pm/items/2658538">零ゴシック</a></li>
+            
+            <li id = "invisble_gothic"><a href = "https://nippori30.booth.pm/items/4144426">インビジブルゴシック</a></li>
+            
+            <li id = "senobi_gothic"><a href = "https://modi.jpn.org/font_senobi.php">せのびゴシック</a></li>
+            
+            <li id = "supersensai_gothic"><a href = "https://font.websozai.jp/line-font-mihon.html">超繊細ゴシック体</a></li>
+            
+            <li id = "ryakuzi_GS_gothic"><a href = "https://nukosuki.booth.pm/items/450272">略字GSゴシック</a></li>
+            
+            <li id = "tyakuziless_togetoge"><a href = "https://nukosuki.booth.pm/items/2998290">略字少なめとげとげ</a></li>
+            
+            <li id = "taisyou_ryaku_font"><a href = "https://nukosuki.booth.pm/items/363104"> 大正略字フォント</a></li>
+            
+            <li id = "hikomi_font"><a href = "https://bbbbbhimiko.booth.pm/items/2734322"> ひこみフォント</a></li>
+            
+            <li id = "Dela_Gothic_One"><a href = "https://fonts.google.com/specimen/Dela+Gothic+One"> </a>Dela Gothic One</li>
+            
+            <li id = "DotGothic16"><a href = "https://fonts.google.com/specimen/DotGothic16"> DotGothic16</a></li>
+            
+            <li id = "isego"><a href = "https://flopdesign.booth.pm/items/2291468"> 異世ゴ</a></li>
+            
+            <li id = "kanzyuku_gothic"><a href = "https://www.flopdesign.com/freefont/kanjyukugothic-freefont.html"> かんじゅくゴシック</a></li>
+            
+            <li id = "toge_gothic"><a href = "https://fontgraphic.jp/togegothic"> 棘ゴシック</a></li>
+            
+            <li id = "BIZ_UDGothic"><a href = "https://fonts.google.com/specimen/BIZ+UDGothic">BIZ_UDGothic </a></li>
+            
+            <li id = "osigo"><a href = "https://atelierkotatu.booth.pm/items/5635169">推しゴ</a></li>
+            
+            <li id = "KT_kiyosuna_gothic"><a href = "https://kohakuno-typelib.booth.pm/items/5389901">KTきよすなゴシック</a></li>
+            
+            <li id = "851_goti_kakutto"><a href = "https://pm85122.onamae.jp/851Gkktt.html"> 851ゴチカクット</a></li>
+            
+            <li id = "tanugo"><a href = "https://tanukifont.com/tanugo"> たぬゴ</a></li>
+            
+            <li id = "tukizi_35point_gotiic"><a href = "https://typographish.booth.pm/items/5466077">築地35ポイントゴチック </a></li>
+            
+            <li id = "genei_font"><a href = "https://okoneya.jp/font/genei-pople.html">源暎フォント </a></li>
+        </ul>  -->
+        <ul class = midashi_gothic id  = "midashi_gothic">
+            <h2 id="midashigothic">見出しーゴシック</h2>
+            <li class = "formal" id = "sippori_huto_gothic"><a   href = "https://fontdasu.booth.pm/items/5147560" target ="_blank">しっぽり太ゴシック</a></li>
+            
+            <li class = "formal" id = "sippori_huto_gotiic"><a href = "https://fontdasu.booth.pm/items/5147583">しっぽり太ゴチック</a></li>
+            
+            <li class = "cool" id = "otesei_Rwi_gothic"><a href = "https://rwi.booth.pm/items/4114624">お手製Rwiフォント</a></li>
+            
+            <li class = "formal" id = "tunagi_gothic"><a href = "https://mokuzai.booth.pm/items/3885939">つなぎゴシック</a></li>
+            
+            <li class = "cool" id = "tro_no_glitch_gothic"><a href = "https://microraptor.booth.pm/items/3041172">瀞ノグリッチ黒体・瀞ノグリッチ明朝 </a></li>
+            
+            <li class = "non" id = "zakkuri_gothic"><a href = "https://nippori30.booth.pm/items/2526375">ざっくりゴシック </a></li>
+            
+            <li class = "non" id = "line_gothic"><a href = "https://nippori30.booth.pm/items/2120156">ラインゴシック </a></li>
+            
+            <li class = "non" id = "slit_gothic"><a href = "https://nippori30.booth.pm/items/1812446">スリットゴシック</a></li>
+            
+            <li class = "cute" id = "dokidoki_fantasia"><a href = "https://flopdesign.booth.pm/items/4106184">どきどきファンタジア </a></li>
+            
+            <li class = "cool" id = "zero_gothic"><a href = "https://flopdesign.booth.pm/items/2658538">零ゴシック</a></li>
+            
+            <li class = "non" id = "invisble_gothic"><a href = "https://nippori30.booth.pm/items/4144426">インビジブルゴシック</a></li>
+            
+            <li class = "non" id = "senobi_gothic"><a href = "https://modi.jpn.org/font_senobi.php">せのびゴシック</a></li>
+            
+            <li class = "formal" id = "supersensai_gothic"><a href = "https://font.websozai.jp/line-font-mihon.html">超繊細ゴシック体</a></li>
+            
+            <li class = "formal" id = "ryakuzi_GS_gothic"><a href = "https://nukosuki.booth.pm/items/450272">略字GSゴシック</a></li>
+            
+            <li class = "non" id = "tyakuziless_togetoge"><a href = "https://nukosuki.booth.pm/items/2998290">略字少なめとげとげ</a></li>
+            
+            <li class = "non" id = "taisyou_ryaku_font"><a href = "https://nukosuki.booth.pm/items/363104"> 大正略字フォント</a></li>
+            
+            <li class = "non" id = "hikomi_font"><a href = "https://bbbbbhimiko.booth.pm/items/2734322"> ひこみフォント</a></li>
+            
+            <li class = "formal" id = "Dela_Gothic_One"><a href = "https://fonts.google.com/specimen/Dela+Gothic+One"> </a>Dela Gothic One</li>
+            
+            <li class = "non" id = "DotGothic16"><a href = "https://fonts.google.com/specimen/DotGothic16"> DotGothic16</a></li>
+            
+            <li class = "cool" id = "isego"><a href = "https://flopdesign.booth.pm/items/2291468"> 異世ゴ</a></li>
+            
+            <li class = "cute" id = "kanzyuku_gothic"><a href = "https://www.flopdesign.com/freefont/kanjyukugothic-freefont.html"> かんじゅくゴシック</a></li>
+            
+            <li class = "non" id = "toge_gothic"><a href = "https://fontgraphic.jp/togegothic"> 棘ゴシック</a></li>
+            
+            <li class = "formal" id = "BIZ_UDGothic"><a href = "https://fonts.google.com/specimen/BIZ+UDGothic">BIZ_UDGothic </a></li>
+            
+            <li class = "cute" id = "osigo"><a href = "https://atelierkotatu.booth.pm/items/5635169">推しゴ</a></li>
+            
+            <li class = "formal" id = "KT_kiyosuna_gothic"><a href = "https://kohakuno-typelib.booth.pm/items/5389901">KTきよすなゴシック</a></li>
+            
+            <li class = "non" id = "851_goti_kakutto"><a href = "https://pm85122.onamae.jp/851Gkktt.html"> 851ゴチカクット</a></li>
+            
+            <li class = "non" id = "tanugo"><a href = "https://tanukifont.com/tanugo"> たぬゴ</a></li>
+            
+            <li class = "formal" id = "tukizi_35point_gotiic"><a href = "https://typographish.booth.pm/items/5466077">築地35ポイントゴチック </a></li>
+            
+            <li class = "non" id = "genei_font"><a href = "https://okoneya.jp/font/genei-pople.html">源暎フォント </a></li>
+            
+            <li class = "non" id = "cheesegothic"><a href = "https://nippori30.booth.pm/items/4159437"> チーズゴシック</a></li>
+        </ul>
+            <!-- 見出しー丸ゴシック -->
+             
+        <ul class = midasi_marugothic id = "midasi_marugothic">
+            <h2 id="midashimarugothic">見出しー丸ゴシック</h2>
+            <li id = "mochiy_pop"><a href = "https://fonts.google.com/?query=Mochiy+Pop"> Mochiy_Pop</a></li>
+            
+            <li id = "rounded_mplus"><a href = "http://jikasei.me/font/rounded-mplus/"> 自家製_Rounded_M+</a></li>
+            
+            <li id = "yasashii_kimochi"><a href = "https://www.flopdesign.com/font4/yasashiikimochi.html"> やさしいキモチつながるココロ</a></li>
+            
+            <li id = "double_lemon_font"><a href = "https://flopdesign.booth.pm/items/5190194"> だぶるれもん フォント</a></li>
+            
+            <li id = "uta_to_carol"><a href = "https://www.flopdesign.com/syotai/utacarol.html"> うたとキャロル</a></li>
+            
+            <li id = "marugame_honmaru_gothic"><a href = "https://www.flopdesign.com/marugothic/marugame-font.html"> まるがめ本丸ゴシック</a></li>
+            
+            <li id = "asago_honmaru_gothic"><a href = "https://www.flopdesign.com/marugothic/asago-honmaru-gothic.html"> あさご本丸ゴシック</a></li>
+            
+            <li id = "uzumasa_honmaru_gothic"><a href = "https://www.flopdesign.com/marugothic/uzumasa-font.html"> うずまさ本丸ゴシック</a></li>
+            
+            <li id = "shirasagi_honmaru_gothic"><a href = "https://www.flopdesign.com/marugothic/shirasagi-font.html"> しらさぎ本丸ゴシック</a></li>
+            
+            <li id = "kumamoto_honmaru_gothic"><a href = "https://www.flopdesign.com/marugothic/kumamoto-font.html"> くまもと本丸ゴシック</a></li>
+            
+            <li id = "hikone_honmaru_gothic"><a href = "https://www.flopdesign.com/marugothic/hikone-font.html"> ひこね本丸ゴシック</a></li>
+            
+            <li id = "zenin_shugo_pop"><a href = "https://mikannnoki-font.booth.pm/items/4356584"> 全員集合！ポップ体</a></li>
+            
+            <li id = "jiyucho_font"><a href = "https://coliss.com/?smd_process_download=1&download_id=43066"> じゆうちょうフォント</a></li>
+            
+            <li id = "tanuei_kaku_pop"><a href = "https://tanukifont.com/tanuei-kaku-pop/"> たぬえいカクポップタイ</a></li>
+            
+            <li id = "shin_retro_maru_gothic"><a href = "https://typographish.booth.pm/items/4607768"> 新レトロ丸ゴシック</a></li>
+            
+            <li id = "ranobe_pop_font"><a href = "http://www.fontna.com/blog/1706/"> ラノベPOPフォント</a></li>
+         </ul> 
+                    <!-- 見出しー筆 -->
+                    
+            <ul class = midashi_hude id = "midashi_hude">
+                <h2 id="midashihude">見出しー筆</h2> 
+                <li id = "all anithique"><a href = "https://fonts.google.com/specimen/Zen+Antique+Soft"> 全アンティーク</a></li>
+                
+                <li id = "onion"><a href = "https://booth.pm/ja/items/1948683"> 玉ねぎ</a></li>
+                
+                <li id = "sasabune"><a href = "https://shokaki.booth.pm/items/4097318"> 笹船</a></li>
+                
+                <li id = "utage"><a href = "https://shokaki.booth.pm/items/1492419"> 宴</a></li>
+                
+                <li id = "rinnpenn"><a href = "https://shokaki.booth.pm/items/2197873"> 鱗片</a></li>
+                
+                <li id = "sousyo"><a href = "https://nukosuki.booth.pm/items/318557"> 草書</a></li>
+                
+                <li id = "edo"><a href = "https://faraway.booth.pm/items/5415803"> 江戸</a></li>
+                
+                <li id = "hujiwara"><a href = "https://faraway.booth.pm/items/4532159"> 藤原</a></li>
+                
+                <li id = "hubou"><a href = "https://fuboh.jp/不忘フェルトペン書体/"> 不忘</a></li>
+                
+                <li id = "onionx"><a href = "https://gyokutendo.booth.pm/items/2929647"> 玉ねぎ廻</a></li>
+                
+                <li id = "tihaya"><a href = "https://welina.xyz/font/tegaki/ちはや毛筆/"> 千早</a></li>
+                
+                <li id = "yoppa"><a href = https://karu-k.booth.pm/items/2985842""> よっぱ</a></li>
+                
+                <li id = "sasahude"><a href = "https://karu-k.booth.pm/items/1944977"> 笹筆 </a></li>
+                
+                <li id = "piro"><a href = "https://piroparu.booth.pm/items/2994685"> ぴろぱる</a></li>
+                
+                <li id = "huto"><a href = "https://welina.xyz/font/tegaki/fude2/"> 太文字</a></li>
+                
+                <li id = "riitegaki"><a href = "http://aoirii.babyblue.jp/font/riitf/index.html"> りいてがき</a></li>
+                
+                <li id = "sikinatu"><a href = "http://www.hakusyu.com/download_shiki_summer.htm"> 四季夏</a></li>
+                
+                <li id = "sikiaki"><a href = "http://www.hakusyu.com/download_shiki_autumn.htm"> 四季秋</a></li>
+                
+                <li id = "hudetiku"><a href = "https://suzumi-bato.booth.pm/items/5498833"> 筆竹</a></li>
+                
+                <li id = "kouzanmouhitu"><a href = "https://opentype.jp/kouzanmouhitufont.htm">衡山毛筆</a></li>
+                
+                <li id = "aoyagisouseki"><a href = "https://opentype.jp/aoyagisosekifont.htm">青柳漱石</a></li>
+            </ul> 
+                <!-- 見出しーデザイン -->
+                 
+            <ul class = midashi_design id  = "midashi_design">
+                <h2 id="midashidesign">見出しーデザイン</h2>
+                <li id = "daruma"><a href = "https://fonts.google.com/specimen/Darumadrop+One"> ダルマ</a></li>
+
+                <li id = "aoharu"><a href = "https://monachiba.booth.pm/items/3842233 
+                "> 青春</a></li>
+
+                <li id = "browse"><a href = "https://fonts.google.com/?query=yuji"> ブラウズ</a></li>
+
+                <li id = "stick"><a href = "https://fonts.google.com/specimen/Stick"> スティック</a></li>
+
+                <li id = "rampart"><a href = "https://fonts.google.com/specimen/Rampart+One"> ランパート</a></li>
+
+                <li id = "train"><a href = "https://fonts.google.com/specimen/Train+One"> 電車</a></li>
+
+                <li id = "hachimaru"><a href = "https://fonts.google.com/specimen/Hachi+Maru+Pop"> はちまる</a></li>
+
+                <li id = "chokoku"><a href = "https://github.com/go108go/Chokokutai"> 彫刻</a></li>
+
+                <li id = "hataretoro"><a href = "https://hataretro-font.booth.pm/items/2703180"> ハタレトロ</a></li>
+
+                <li id = "taisyoukatuzi"><a href = "https://nukosuki.booth.pm/items/738177"> 大正活字</a></li>
+            </ul>
+                <!-- 見出し-手書き -->
+                 
+            <ul class = hand id = "midasi_hand">
+                <h2 id="midashihand">見出し-手書き</h2>
+                <li id = "hand_kgothic"><a href ="https://booth.pm/ja/items/1025180">Kゴシック</a></li>
+            
+                <li id = "hand_soda"><a href ="https://berry-milk-sugar.booth.pm/items/3221086">アイシングソーダ</a></li>
+            
+                <li id = "hand_N"><a href ="https://aoirii.babyblue.jp/font/riitn/index.html">りいてがきN</a></li>
+            
+                <li id = "hand_chihaya"><a href ="https://welina.xyz/font/tegaki/ちはや純/">ちはや純</a></li>
+            
+                <li id = "hand_KFhimaji"><a href ="https://www.kfstudio.net/font/kfhimaji/">ＫＦひま字</a></li>
+            
+                <li id = "hand_framboise"><a href ="https://booth.pm/ja/items/2191504">フランボわーず</a></li>
+            
+                <li id = "hand_Zen Kurenaido"><a href ="https://fonts.google.com/specimen/Zen+Kurenaido">Zen Kurenaido</a></li>
+            
+                <li id = "hand_Yomogi"><a href ="https://fonts.google.com/specimen/Yomogi">Yomogi</a></li>
+            
+                <li id = "hand_GL-Tsukiji"><a href ="https://github.com/Gutenberg-Labo/GL-Tsukiji">GL-Tsukiji</a></li>
+            
+                <li id = "hand_osyou"><a href ="https://oshooo.booth.pm/items/5822226">おしょうのきったねえ字フォント</a></li>
+            
+                <li id = "hand_tsubo"><a href ="https://yaji317.booth.pm/items/4504074">つぼフォント</a></li>
+            
+                <li id = "hand_hoikuen"><a href ="https://note.com/suikasu123/n/n00131faa12ee">ほいくえんじ</a></li>
+            
+                <li id = "hand_saru"><a href ="https://note.com/chitosekato/n/nc162552f8c1f">さるじふぉんと</a></li>
+            
+                <li id = "hand_yomogi"><a href ="https://yomogino09.booth.pm/items/3774731">よもぎのフォント</a></li>
+            
+                <li id = "hand_tsumugi"><a href ="https://kuma-labo.booth.pm/items/3658267">紬フォント</a></li>
+            
+                <li id = "hand_yosugara"><a href ="https://tetetette.booth.pm/items/2801268">夜すがら手書きフォント</a></li>
+            
+                <li id = "hand_hutene"><a href ="https://ikarinohi.booth.pm/items/2818671">ふて寝フォント</a></li>
+            
+                <li id = "hand_umeboshi"><a href ="http://font.xxenxx.net/umeboshifont.html">梅干フォント</a></li>
+            
+                <li id = "hand_negi"><a href ="https://figmentr.booth.pm/items/2862028">ねぎちゃんふぉんと</a></li>
+            </ul>
+                <!-- 見出しーその他 -->
+            
+            <ul class = midashi_sonota id  = "midashi_sonota">
+                <h2 id="midashisonota">見出しーその他</h2>
+                <li id = "M_PLUS1"><a href = "https://fonts.google.com/specimen/M+PLUS+1">M_PLUS1 </a></li>
+                
+                <li id = "M_PLUS2 "><a href = "https://fonts.google.com/specimen/M+PLUS+2">M_PLUS2 </a></li>
+                
+                <li id = "M_PLUS1_Code"><a href = "https://fonts.google.com/specimen/M+PLUS+1+Code">M_PLUS1_Code </a></li>
+                
+                <li id = "M_PLUS_Code_Latin"><a href = "https://fonts.google.com/specimen/M+PLUS+Code+Latin"> M_PLUS_Code_Latin</a></li>
+                
+                <li id = "Murecho"><a href = "https://fonts.google.com/specimen/Murecho"> Murecho</a></li>
+                
+                <li id = "New_Tegomin"><a href = "https://fonts.google.com/specimen/New+Tegomin">New_Tegomin </a></li>
+                
+                <li id = "240mksd"><a href = "https://mksd.jp/240mksd.html">240mksd</a></li>
+                
+                <li id = "apple_princess"><a href = "https://ilamemo.booth.pm/items/4275601"> りんごひめ</a></li>
+                
+                <li id = "RocknRoll_One"><a href = "https://fonts.google.com/specimen/RocknRoll+One"> RocknRoll_One</a></li>
+                
+                <li id = "Reggae_One"><a href = "https://fonts.google.com/specimen/Reggae+One">Reggae_One </a></li>
+                
+                <li id = "soroma"><a href = "https://angelvibes.booth.pm/items/4167818"> ソㇿマ</a></li>
+                
+                <li id = "makaro"><a href = "https://angelvibes.booth.pm/items/1134139">マカロ </a></li>
+                
+                <li id = "arikko"><a href = "https://angelvibes.booth.pm/items/1134054"> アリッコ</a></li>
+                
+                <li id = "yoinnkana"><a href = "https://renfont.booth.pm/items/3894935">余韻かな </a></li>
+                
+                <li id = "kiramekiretoro"><a href = "https://yakishake01.booth.pm/items/3596516"> きらめきレトロ</a></li>
+                
+                <li id = "kittinkatakana"><a href = "https://mikannnoki-font.booth.pm/items/3356636">キッチンカタカナ </a></li>
+                
+                <li id = "melodyline"><a href = "https://atelierkotatu.booth.pm/items/4983846">メロディライン </a></li>
+                
+                <li id = "child_panda_font"><a href = "https://atelierkotatu.booth.pm/items/3689711">子パンダフォント </a></li>
+                
+                <li id = "siagerufont"><a href = "https://ayanoroom.booth.pm/items/2648054">しあげるフォント </a></li>
+                
+                <li id = "Luck_Font"><a href = "https://amaridesign.booth.pm/items/4442310"> Luck_Font</a></li>
+                
+                <li id = "Potta_One"><a href = "https://fonts.google.com/specimen/Potta+One?subset=japanese">Potta_One </a></li>
+                
+                <li id = "hexca_devil"><a href = "https://orange634nty.booth.pm/items/4448378"> ヘキサデビル</a></li>
+                
+                <li id = "hayu_font"><a href = "https://dae.booth.pm/items/5189648"> はゆフォント</a></li>
+                
+                <li id = "suzusiro"><a href = "https://zipangcomplex.booth.pm/items/4891988">スズシロ </a></li>
+                
+                <li id = "akogare"><a href = "https://nukosuki.booth.pm/items/3947794"> あこがれのまるもじ</a></li>
+                
+                <li id = "samurai"><a href = "https://mattsun-maru.booth.pm/items/3977347"> まっつん丸の侍魂ふぉんと</a></li>
+                
+                <li id = "retrolump"><a href = "https://mattsun-maru.booth.pm/items/3592632"> まっつん丸の「レトロランプフォント」</a></li>
+                
+                <li id = "atohitohude"><a href = "https://mattsun-maru.booth.pm/items/3635420"> まっつん丸の「一筆足らずフォント」</a></li>
+                
+                <li id = "atamadekkati"><a href = "https://mattsun-maru.booth.pm/items/3616379"> まっつん丸の「あたまでっかちフォント」</a></li>
+                
+                <li id = "antelimu"><a href = "https://ryo9tya.booth.pm/items/3886127"> アンティリム </a></li>
+                
+                <li id = "Nu-akkaoi"><a href = "https://sayunu.booth.pm/items/804000">Nu-ワッカオイ</a></li>
+                
+                <li id = "font910"><a href = "https://www.font910.jp/font-list/1byte01.html">フォント910 </a></li>
+                
+                <li id = "mini_wakuwaku"><a href = "http://mini-design.jp/font/mini-wakuwaku.html"> mini-わくわく</a></li>
+                
+                <li id = "mini_pukupuku"><a href = "http://mini-design.jp/font/mini-pukupuku.html"> mini-ぷくぷく</a></li>
+                
+                <li id = "mini_convenie"><a href = "http://mini-design.jp/font/mini-convenie.html"> mini-コンビニ</a></li>
+                
+                <li id = "guzurifont"><a href = "https://lollistore.booth.pm/items/3575686"> ぐずりふぉんと一年生</a></li>
+                
+                <li id = "hunwariround"><a href = "https://suzukimemo.com/post-1302"> わんわりラウンド</a></li>
+                
+                <li id = "Nu-rakkasei"><a href = "https://sayunu.booth.pm/items/802912"> Nu-らっかせい </a></li>
+                
+                <li id = "huwahuwafont"><a href = "https://huwahuwa.ff-design.net/56/">ふわふわフォント </a></li>
+                
+                <li id = "naisyomozi"><a href = "http://fontdasu.com/658"> ナイショ文字</a></li> 
+                ねるば — 昨日 18:49
+                <li id = "yokosukablock"><a href = "http://fontdasu.com/179">ヨコスカブロック | </a></li>
+                
+                <li id = "memoir"><a href = "http://modi.jpn.org/font_memoir.php"> めもわーる</a></li>
+                
+                <li id = "iroha-mochi"><a href = "http://modi.jpn.org/font_iroha-mochi.php"> いろはモチ</a></li>
+                
+                <li id = "cinderella"><a href = "http://modi.jpn.org/font_cinderella.php"> シンデレラ</a></li>
+                
+                <li id = "pome"><a href = "http://www.lazypolarbear.com/entry/2017/06/27/022627">ぽめらにあん </a></li>
+                
+                <li id = "zou"><a href = "https://www.lazypolarbear.com/zou"> ゾウフォント</a></li>
+                
+                <li id = "kirin"><a href = "https://www.lazypolarbear.com/entry/kirin">キリンフォント </a></li>
+                
+                <li id = "hexsameteor"><a href = "https://orange634nty.booth.pm/items/3024557"> ヘキサメテオ</a></li>
+                
+                <li id = "NC_Teikoku"><a href = "https://ncempire.net/download"> NC帝国</a></li>
+                
+                <li id = "marukoiasu"><a href = "https://microraptor.booth.pm/items/1636407">まるこいあす </a></li>
+                
+                <li id = "sukuteramu"><a href = "https://microraptor.booth.pm/items/1100943"> すくてらむ</a></li>
+                
+                <li id = "supumera"><a href = "https://microraptor.booth.pm/items/1521680">すぷめら </a></li>
+                
+                <li id = "amanatu"><a href = "https://twitter.com/graygrpx/status/1391043354159292422">あまなつ </a></li>
+                
+                <li id = "po-ra"><a href = "https://twitter.com/graygrpx/status/983514769821843456"> ぽーら</a></li>
+                
+                <li id = "urara"><a href = "https://twitter.com/graygrpx/status/989784961908551680"> うらら</a></li>
+                
+                <li id = "hellohello"><a href = "https://twitter.com/graygrpx/status/1224937478752092160"> はろーはろー</a></li>
+                
+                <li id = "mr.gurei"><a href = "https://twitter.com/graygrpx/status/1248402845809819649"> ミスターグレイ</a></li>
+                
+                <li id = "donutsshop"><a href = "https://www.graphicartsunit.com/gaupra/font_k.html"> ドーナツショップ</a></li>
+                
+                <li id = "pankizi"><a href = "https://nomuraya.booth.pm/items/706099"> ぱんきじ</a></li>
+                
+                <li id = "hentai"><a href = "https://hentaigana.booth.pm/items/4889029"> 変体</a></li>
+                
+                <li id = "itangana"><a href = "https://fontring.booth.pm/items/1395946"> 異端仮名</a></li>
+                
+                <li id = "itangana_kai"><a href = "https://fontring.booth.pm/items/3213962"> 異端仮名『怪』</a></li>
+                
+                <li id = "maromin"><a href = "https://fontring.booth.pm/items/1311668"> まろみん</a></li>
+                
+                <li id = "mintyou_okinawa"><a href = "https://fontring.booth.pm/items/1003982"> 明朝体用の沖縄文字</a></li>
+                
+                <li id = "delirettant"><a href = "https://raymei.booth.pm/items/3747253"> でぃれったんと</a></li>
+                
+                <li id = "ethnic"><a href = "https://xuemaru.booth.pm/items/2887858"> えすにっく風ォント</a></li>
+                
+                <li id = "kanatatohinata"><a href = "https://flopdesign.com/syotai/kanata.html">かなたとひなた </a></li>
+                
+                <li id = "penguintown"><a href = "https://www.flopdesign.com/syotai/penguin.html">ぺんぎんたうん </a></li>
+                
+                <li id = "nanakyun"><a href = "https://flopdesign.booth.pm/items/260288">ななキュンのうた </a></li>
+                
+                <li id = "kahukahen"><a href = "https://www.flopdesign.com/font7/kafkahen-font.html">カフカヘン </a></li> 
+                ねるば — 昨日 19:24
+                <li id = "nekokaburi"><a href = "http://www.flopdesign.com/font4/nekokaburi-font.html"> ねこかぶり</a></li>
+                
+                <li id = "nakimusiporuka"><a href = "https://www.flopdesign.com/font7/nakimushipolca-font.html">なきむしポルカ </a></li>
+                
+                <li id = "manabiya"><a href = "https://modi.jpn.org/font_manabiya.php"> まなびや</a></li>
+                
+                <li id = "irohamaru"><a href = "https://modi.jpn.org/font_irohamaru.php">いろはまる </a></li>
+                
+                <li id = "irohakaku"><a href = "https://modi.jpn.org/font_irohakakuc.php"> いろはかく</a></li>
+                
+                <li id = "irohamaru-mikami"><a href = "https://modi.jpn.org/font_irohamaru-mikami.php"> いろはまる-みかみ</a></li>
+                
+                <li id = "semamozi"><a href = "https://logotype.jp/semamoji.html">セマモジ </a></li>
+                
+                <li id = "kotonode"><a href = "https://dkf.booth.pm/items/2727320">コトノデ </a></li>
+                
+                <li id = "maromin"><a href = "https://fontring.booth.pm/items/1311668"> まろみん</a></li>
+                
+                <li id = "watasinotameni"><a href = "https://enuoka.booth.pm/items/1398444"> わたしのために</a></li>
+                
+                <li id = "handwriting_font_majipane"><a href = "https://www.illllli.com/font/handwriting/majipane/"> まじぱねぇ</a></li>
+                
+                <li id = "karakaze_font"><a href = "https://enuoka.booth.pm/items/1219316"> からかぜ</a></li>
+                
+                <li id = "rings_of_saturn_font"><a href = "https://flopdesign.booth.pm/items/605389"> Rings_of_saturn</a></li>
+                
+                <li id = "kamura_no_moji"><a href = "http://ymnk-design.com/カムラのもじ/"> カムラのもじ</a></li>
+                
+                <li id = "pu_pu_pu"><a href = "http://ymnk-design.com/プぷプ/"> プぷプ</a></li>
+                
+                <li id = "gagagaga"><a href = "http://ymnk-design.com/12-2/"> ガガガガ</a></li>
+                
+                <li id = "banban"><a href = "http://ymnk-design.com/バンバン/"> バンバン</a></li>
+                
+                <li id = "mishimishi"><a href = "http://ymnk-design.com/ミシミシ/"> ミシミシ</a></li>
+                
+                <li id = "fz_heragana"><a href = "https://zone108.main.jp/s/jp-001heragana.php"> FZヘラガナ</a></li>
+                
+                <li id = "fz_gontakana"><a href = "https://zone108.main.jp/s/jp-005gontakana.php"> FZゴンタかな</a></li>
+                
+                <li id = "whiskey_katakana"><a href = "https://mikannnoki-font.booth.pm/items/1588250"> ウイスキーカタカナ</a></li>
+                
+                <li id = "maruminya"><a href = "https://00ff.booth.pm/items/4927023"> マルミーニャ</a></li>
+                
+                <li id = "marumonica"><a href = "https://00ff.booth.pm/items/2958237"> マルモニカ</a></li>
+                
+                <li id = "dseg"><a href = "https://www.keshikan.net/fonts.html"> DSEG</a></li>
+                
+                <li id = "maruminya_m"><a href = "https://00ff.booth.pm/items/5435640"> マルミーニャＭ</a></li>
+                
+                <li id = "digital_numbers"><a href = "https://www.trojanbear.net/s/category/font"> デジタル数字</a></li>
+                
+                <li id = "baseball_park_font"><a href = "http://fontlab.web.fc2.com/baseballpark.html"> 野球場フォント</a></li>
+                
+                <li id = "nhk_time_display_font"><a href = "https://aoi-tomoe-shop.booth.pm/items/4137687"> NHKの時刻表示フォント</a></li>
+                
+                <li id = "shokaki_hentai_kana_gothic"><a href = "https://shokaki.booth.pm/items/5633978"> しょかき変体仮名ゴチック（作成中）</a></li>
+                
+                <li id = "omatsuri_font"><a href = "https://213chan.booth.pm/items/5502706"> おまつりふぉんと</a></li>
+                
+                <li id = "variable_font_putting"><a href = "https://toktaro.booth.pm/items/5235675"> カタカナのバリアブルフォント</a></li>
+                
+                <li id = "humour"><a href = "https://moji-waku.com/humour/"> ユムール</a></li>
+                
+                <li id = "kinkaku"><a href = "https://moji-waku.com/kinkaku/"> 金畫字</a></li>
+                
+                <li id = "otomanopee"><a href = "https://github.com/Gutenberg-Labo/Otomanopee"> Otomanopee</a></li>
+                
+                <li id = "manga_sound_effects_font"><a href = "http://www.manga-sozai.com/data/koukaonfont"> カタカナ</a></li>
+                </ul> 
+                
+                <!-- 本文ー明朝 -->
+                 
+                <ul class = honbun_mintyou id = "honbun_mintyou">
+                    <h2 id="honnbunnminntyou">本文ー明朝</h2>
+                    <li id = "mintyou_BIZ UDMincho"><a href ="https://fonts.google.com/specimen/BIZ+UDMincho">BIZ UDMincho</a></li>
+                
+                    <li id = "mintyou_Shippori Mincho"><a href ="https://fonts.google.com/specimen/Shippori+Mincho">Shippori Mincho</a></li>
+                
+                    <li id = "mintyou_Zen Old Mincho"><a href ="https://fonts.google.com/specimen/Zen+Old+Mincho">Zen Old Mincho</a></li>
+                
+                    <li id = "mintyou_yonagaold"><a href ="https://branch-nuts.booth.pm/items/3489185">夜永オールド明朝</a></li>
+                
+                    <li id = "mintyou_han serif"><a href ="https://github.com/adobe-fonts/source-han-serif">han serif</a></li>
+                
+                    <li id = "mintyou_chikuhou"><a href ="https://typographish.booth.pm/items/4404547">築豊明朝</a></li>
+                
+                    <li id = "mintyou_kokoro"><a href ="https://fontopo.com/?p=520">こころ明朝体</a></li>
+                
+                    <li id = "mintyou_asebi"><a href ="https://metasta.github.io/asebi/">馬酔木明朝</a></li>
+                
+                    <li id = "mintyou_corporate"><a href ="https://logotype.jp/osusume-font-corpmin.html">コーポレート明朝</a></li>
+                
+                    <li id = "mintyou_koku"><a href ="https://freefonts.jp/font-koku-min.html">刻明朝</a></li>
+                
+                    <li id = "mintyou_honoka"><a href ="https://font.gloomy.jp/honoka-mincho-dl.html">ほのか新明朝</a></li>
+                </ul> 
+                    <!-- 本文ーゴシック   -->
+                     
+                    <ul class="midashi_gothic" id="honbun_gothic">
+                        <h2 id="honnbunngothic">本文ーゴシック</h2>
+                        <li id="lineseed">
+                            <a href="https://seed.line.me/index_jp.html">LINE Seed</a>
+                        </li>
+                        <li id="sourcehansans">
+                            <a href="https://github.com/adobe-fonts/source-han-sans">Source Han Sans</a>
+                        </li>
+                        <li id="shipporitai1">
+                            <a href="https://fontdasu.booth.pm/items/5147560">しっぽり太ゴシック</a>
+                        </li>
+                        <li id="shipporitai2">
+                            <a href="https://fontdasu.booth.pm/items/5147583">しっぽり太ゴチック</a>
+                        </li>
+                        <li id="higuregothic">
+                            <a href="https://mokuzai.booth.pm/items/4571997">ひぐれゴシック</a>
+                        </li>
+                        <li id="natsusemmarugothic">
+                            <a href="https://mokuzai.booth.pm/items/4525676">夏蝉丸ゴシック</a>
+                        </li>
+                        <li id="oteserwifont">
+                            <a href="https://rwi.booth.pm/items/4114624">お手製Rwiフォント</a>
+                        </li>
+                        <li id="tsunagigothic">
+                            <a href="https://mokuzai.booth.pm/items/3885939">つなぎゴシック</a>
+                        </li>
+                        <li id="mgenplus">
+                            <a href="http://jikasei.me/font/mgenplus/">Mgen+ (ムゲンプラス)</a>
+                        </li>
+                        <li id="sukimagothic">
+                            <a href="https://oppekebekkanko.booth.pm/items/2117070">すきまゴシック</a>
+                        </li>        
+                    </ul>      
+                        <!-- 本文ー丸ゴシック -->
+                         
+                    <ul class = honbun_marugothic id  = "honbun_marugothic">
+                        <h2 id="honnbunnmarugothic">本文ー丸ゴシック</h2>
+                        <li id = "rounded_mgen_plus"><a href = "http://jikasei.me/font/rounded-mgenplus/">Rounded_Mgen</a></li>
+                        
+                        <li id = "genjyu_gothic"><a href = "http://jikasei.me/font/genjyuu/"> 源柔ゴシック</a></li>
+                        
+                        <li id = "gensen_font"><a href = "https://github.com/ButTaiwan/gensen-font"> Gensen_Font</a></li>
+                        
+                        <li id = "kanazawa_honmaru_gothic"><a href = "https://www.flopdesign.com/marugothic/kanazawa-font.html"> かなざわ本丸ゴシック</a></li>
+                        
+                        <li id = "honoka_shinmaru_gothic"><a href = "http://font.gloomy.jp/honoka-maru-gothic-dl.html"> ほのか新丸ゴシック</a></li>
+                        
+                        <li id = "honoka_antique_maru"><a href = "http://font.gloomy.jp/honoka-antique-maru-dl.html"> ほのか新アンティーク丸</a></li>
+                        
+                        <li id = "zen_maru_gothic"><a href = "https://fonts.google.com/specimen/Zen+Maru+Gothic">Zen_Maru_Gothic</a></li>
+                        
+                        <li id = "kosugi_maru"><a href = "https://fonts.google.com/specimen/Kosugi+Maru">Kosugi_Maru</a></li>
+                        
+                        <li id = "yasashii_font"><a href = "https://yasashiifont.booth.pm/items/5491954">やさしいフォント</a></li>
+                        
+                        <li id = "uta_san_kana_maru_L"><a href = "https://palettype.booth.pm/items/1182070">うたサンかな-まるL</a></li>
+                        
+                        <li id = "kodomo_maru_gothic"><a href = "https://fontopo.com/?p=514">こども丸ゴシック</a></li>
+                        
+                        <li id = "gen_ei_m_gothic"><a href = "https://okoneya.jp/font/genei-m-gothic.html">源暎エムゴ</a></li>
+                        
+                        </ul> 
+                        <!-- 本文ー筆 -->
+                         
+                        <ul class="honbun_fude" id="honbun_fude">
+                            <h2 id="honnbunnhude">本文ー筆</h2>
+                            <li id="zen-antique-soft">
+                                <a href="https://fonts.google.com/specimen/Zen+Antique+Soft">Zen Antique Soft</a>
+                            </li>
+                        
+                            <li id="tama-negi-kaisho">
+                                <a href="https://booth.pm/ja/items/1948683">玉ねぎ楷書無料版</a>
+                            </li>
+                        
+                            <li id="shokaki-sasabune">
+                                <a href="https://shokaki.booth.pm/items/4097318">しょかき ささぶね【フリーフォント版あり】</a>
+                            </li>
+                        
+                            <li id="shokaki-utage">
+                                <a href="https://shokaki.booth.pm/items/1492419">しょかきうたげ【フリーフォント版あり】</a>
+                            </li>
+                        
+                            <li id="shokaki-uroko">
+                                <a href="https://shokaki.booth.pm/items/2197873">しょかき鱗片【フリーフォント版あり】</a>
+                            </li>
+                        
+                            <li id="kusa-sho">
+                                <a href="https://nukosuki.booth.pm/items/318557">草書フォント（があた草書）</a>
+                            </li>
+                        
+                            <li id="zin-font">
+                                <a href="https://zinsta.jp/font/freefont.html">ジンフォント</a>
+                            </li>
+                        
+                            <li id="shirofune-series">
+                                <a href="https://www.hakusyu.com/download_shiki_winter.php">白舟年賀シリーズ</a>
+                            </li>
+                        
+                            <li id="aihara-edo-moji">
+                                <a href="https://faraway.booth.pm/items/5415803">藍原江戸文字（フリー版）ver.2.00</a>
+                            </li>
+                        
+                            <li id="aihara-kanteiryu">
+                                <a href="https://faraway.booth.pm/items/4532159">藍原勘亭流（フリー版）ver.2.00</a>
+                            </li>
+                        </ul>
+                        <!-- 本文ーデザイン -->
+                         
+                        <ul class="honbun_design" id="honbun_design">
+                            <h2 id="honnbunndesign">本文ーデザイン</h2>
+                            <li id="darumadrop-one">
+                                <a href="https://fonts.google.com/specimen/Darumadrop+One">Darumadrop One</a>
+                            </li>
+                            <li id="ao-haru-marker-mini">
+                                <a href="https://monachiba.booth.pm/items/3842233">アオハルマーカーmini</a>
+                            </li>
+                            <li id="yuji">
+                                <a href="https://fonts.google.com/?query=yuji">Yuji</a>
+                            </li>
+                            <li id="stick">
+                                <a href="https://fonts.google.com/specimen/Stick">Stick</a>
+                            </li>
+                            <li id="rampart-one">
+                                <a href="https://fonts.google.com/specimen/Rampart+One">Rampart One</a>
+                            </li>
+                            <li id="train-one">
+                                <a href="https://fonts.google.com/specimen/Train+One">Train One</a>
+                            </li>
+                            <li id="hachi-maru-pop">
+                                <a href="https://fonts.google.com/specimen/Hachi+Maru+Pop">Hachi Maru Pop</a>
+                            </li>
+                            <li id="chokokutai">
+                                <a href="https://github.com/go108go/Chokokutai">Chokokutai</a>
+                            </li>
+                            <li id="hata-retro">
+                                <a href="https://hataretro-font.booth.pm/items/2703180">はたレトロ【おためし版】</a>
+                            </li>
+                            <li id="taisho-katsuki-t5">
+                                <a href="https://nukosuki.booth.pm/items/738177">大正活字っぽい？フォントT5</a>
+                            </li>
+                        </ul>
+                        <!-- 本文ー手書き -->
+                        
+                        <ul class = honbun_hand id = "honbun_hand">
+                            <h2 id="honnbunnhand">本文ー手書き</h2>
+                            <li id = "hand_Yusei Magic"><a href ="https://fonts.google.com/specimen/Yusei+Magic">Yusei Magic</a></li>
+                        
+                            <li id = "hand_seto"><a href ="https://ja.osdn.net/projects/setofont/releases/">瀬戸フォント</a></li>
+                        
+                            <li id = "hand_aihara"><a href ="https://faraway.booth.pm/items/82611">藍原サインペン（フリー版）</a></li>
+                        
+                            <li id = "hand_nishijima"><a href ="https://nenerab.booth.pm/items/3861821">西島式手書きフォント</a></li>
+                        
+                            <li id = "hand_sana"><a href ="https://hearttome.com/fonts/sanafon/">さなフォン</a></li>
+                        
+                            <li id = "hand_chihaya"><a href ="https://welina.xyz/font/tegaki/ちはや純/">ちはや純</a></li>
+                        
+                            <li id = "hand_kawaii"><a href ="https://font.spicy-sweet.com/">kawaii手書き文字</a></li>
+                        
+                            <li id = "hand_anzu"><a href ="http://www8.plala.or.jp/p_dolce/">あんずもじ</a></li>
+                        
+                            <li id = "hand_kfhima"><a href ="https://www.kfstudio.net/font/kfhimaji/">ＫＦひま字</a></li>
+                        
+                            <li id = "hand_sasagaki"><a href ="https://booth.pm/ja/items/1930534">ささがきフォント</a></li>
+                        </ul>
+                        <h2 id="honbunnsonota">本文ーその他</h2>
+                        <ul class="honbun_other" id="honbun_other">
+                            <li id="kaisei-harunoumi">
+                                <a href="https://fonts.google.com/specimen/Kaisei+HarunoUmi">Kaisei HarunoUmi</a>
+                            </li>
+                            <li id="m-plus-1">
+                                <a href="https://fonts.google.com/specimen/M+PLUS+1">M PLUS 1</a>
+                            </li>
+                            <li id="m-plus-2">
+                                <a href="https://fonts.google.com/specimen/M+PLUS+2">M PLUS 2</a>
+                            </li>
+                            <li id="rocknroll-one">
+                                <a href="https://fonts.google.com/specimen/RocknRoll+One">RocknRoll One</a>
+                            </li>
+                            <li id="klee-one">
+                                <a href="https://fonts.google.com/specimen/Klee+One">Klee One</a>
+                            </li>
+                            <li id="kiwi-maru">
+                                <a href="https://fonts.google.com/specimen/Kiwi+Maru">Kiwi Maru</a>
+                            </li>
+                            <li id="xim-sans">
+                                <a href="https://github.com/XimcoYuzuriha/Xim_Sans/tree/main/ver_01_62">Xim Sans</a>
+                            </li>
+                            <li id="togenkyoo">
+                                <a href="https://fujiwaram.com/archives/1001">医者の手書きフォント</a>
+                            </li>
+                            <li id="hanazono">
+                                <a href="https://glyphwiki.org/hanazono/">Hanazono</a>
+                            </li>
+                            <li id="dejima-fonts">
+                                <a href="https://code.google.com/archive/p/dejima-fonts/">Dejima Fonts</a>
+                            </li>
+                            </ul>
+    </div>
+   
+
+    <script src="scripts.js"></script>
+</body>
+</html>
